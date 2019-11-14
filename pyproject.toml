@@ -1,0 +1,33 @@
+[tool]
+[tool.poetry]
+name = "flask-app"
+version = "1.1.0"
+authors = ["Eduard Kracmar <eduard.kracmar@hotovo.org>"]
+readme = "./README.rst"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+click = "==7.0"
+flask = "==1.1.1"
+gunicorn = "==20.0.0"
+itsdangerous = "==1.1.0"
+jinja2 = "==2.10.3"
+markupsafe = "==1.1.1"
+werkzeug = "==0.16.0"
+
+[tool.dephell.piplock]
+from = {format = "pip",path = "requirements.in"}
+to = {format = "piplock",path = "requirements.txt"}
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.extras]
+tests = ["flake8", "pytest"]
+
+[tool.dephell.main]
+from = {format = "poetry", path = "pyproject.toml"}
+to = {format = "setuppy", path = "setup.py"}
+
+[tool.dephell.poetry2]
+from = {format = "pip", path = "requirements.txt"}
+to = {format = "poetry", path = "pyproject2.toml"}

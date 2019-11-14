@@ -1,0 +1,6 @@
+/build
+/dist
+/*.egg-info
+/pyproject2.toml
+*.pyc
+/.vscode
