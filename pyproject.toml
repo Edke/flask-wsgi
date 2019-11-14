@@ -1,7 +1,7 @@
 [tool]
 [tool.poetry]
 name = "flask-app"
-version = "1.1.0"
+version = "0.1.0"
 authors = ["Eduard Kracmar <eduard.kracmar@hotovo.org>"]
 readme = "./README.rst"
 

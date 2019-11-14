@@ -21,7 +21,7 @@ if os.path.exists(readme_path):
 setup(
     long_description=readme,
     name='flask-app',
-    version='1.1.0',
+    version='0.1.0',
     python_requires='==3.*,>=3.7.0',
     author='Eduard Kracmar',
     author_email='eduard.kracmar@hotovo.org',
